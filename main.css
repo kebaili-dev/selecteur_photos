@@ -1,0 +1,39 @@
+* {
+    border-box: box-sizing;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#photolist {
+    list-style-type: none;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#photolist li {
+    margin: 1em;
+    padding: 0.5em;
+    transition: 0.6s;
+}
+#photolist li:hover{
+    background-color: silver;
+}
+
+.clear {
+    clear: both;
+}
+
+#photolist li.selected{
+    background-color: forestgreen;
+}
+
+#total em {
+    color: red;
+    font-weight: bold;
+}
